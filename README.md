@@ -16,6 +16,14 @@ npm install
 npm run dev
 ```
 
+In this Codex workspace, a local pnpm runner is available under `.tools` after setup. To run the same local preview:
+
+```powershell
+C:\Users\Musleh\.cache\codex-runtimes\codex-primary-runtime\dependencies\node\bin\node.exe node_modules\next\dist\bin\next dev -p 3000
+```
+
+Then open `http://localhost:3000`.
+
 ## Pages
 
 - `/` - Home
