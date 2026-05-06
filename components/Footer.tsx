@@ -10,9 +10,8 @@ export function Footer() {
             Principal Equity Capital
           </p>
           <p className="mt-3 max-w-xl text-sm leading-6 text-white/70">
-            Government contracting consultancy for small businesses,
-            minority-owned firms, and African American entrepreneurs pursuing
-            public-sector growth.
+            Government contracting consultancy built first for African American
+            small business owners pursuing public-sector growth.
           </p>
         </div>
         <div>

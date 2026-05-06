@@ -1,6 +1,8 @@
 import { CheckCircle2 } from "lucide-react";
 import { ButtonLink } from "@/components/ButtonLink";
 import { CtaBand } from "@/components/CtaBand";
+import { FaqAccordion } from "@/components/FaqAccordion";
+import { PathwaySelector } from "@/components/PathwaySelector";
 import { SectionHeader } from "@/components/SectionHeader";
 import {
   benefits,
@@ -17,15 +19,16 @@ export default function HomePage() {
         <div className="mx-auto max-w-7xl">
           <div className="max-w-3xl">
             <p className="text-xs font-bold uppercase text-gold">
-              Government Contracting Consultancy
+              African American Small Business Contracting Consultancy
             </p>
             <h1 className="mt-5 text-4xl font-bold leading-tight sm:text-5xl lg:text-6xl">
               Principal Equity Capital
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-8 text-white/80">
-              We help small businesses, minority-owned firms, and African
-              American entrepreneurs enter government contracting with clear
-              strategy, proposal guidance, and contract acquisition support.
+              We help African American small business owners enter government
+              contracting with clear strategy, proposal guidance, and contract
+              acquisition support. Minority-owned and growth-ready small
+              businesses are also served through the same proven systems.
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <ButtonLink href="/book" icon="phone">
@@ -36,7 +39,7 @@ export default function HomePage() {
               </ButtonLink>
             </div>
             <div className="mt-10 grid gap-3 border-l border-gold/60 pl-5 text-sm text-white/75 sm:grid-cols-3 sm:border-l-0 sm:border-t sm:pl-0 sm:pt-5">
-              <span>Small business government contracts</span>
+              <span>African American small business support</span>
               <span>8(a) and GSA pathway advisory</span>
               <span>Detroit roots, nationwide support</span>
             </div>
@@ -48,8 +51,8 @@ export default function HomePage() {
         <div className="mx-auto max-w-7xl">
           <SectionHeader
             eyebrow="Value"
-            title="A simpler path into public-sector opportunities."
-            description="Government contracting can feel complex from the outside. Principal Equity Capital organizes the path so owners can move with confidence."
+            title="A simpler path for African American businesses to access public-sector opportunities."
+            description="Government contracting can feel complex from the outside. Principal Equity Capital organizes the path so African American founders and owners can move with confidence."
           />
           <div className="mt-10 grid gap-5 md:grid-cols-3">
             {benefits.map((benefit) => {
@@ -57,7 +60,7 @@ export default function HomePage() {
               return (
                 <article
                   key={benefit.title}
-                  className="rounded-lg border border-ink/10 bg-white p-6 shadow-soft"
+                  className="interactive-card rounded-lg border border-ink/10 bg-white p-6 shadow-soft"
                 >
                   <Icon aria-hidden="true" className="h-7 w-7 text-gold" />
                   <h3 className="mt-5 text-xl font-bold text-ink">
@@ -86,7 +89,7 @@ export default function HomePage() {
               return (
                 <article
                   key={service.title}
-                  className="rounded-lg border border-ink/10 bg-white p-6"
+                  className="interactive-card rounded-lg border border-ink/10 bg-white p-6"
                 >
                   <Icon aria-hidden="true" className="h-7 w-7 text-pine" />
                   <h3 className="mt-5 text-lg font-bold text-ink">
@@ -117,7 +120,7 @@ export default function HomePage() {
             {processSteps.map((step, index) => (
               <div
                 key={step}
-                className="flex items-center gap-4 rounded-lg border border-ink/10 bg-white p-5"
+                className="process-step flex items-center gap-4 rounded-lg border border-ink/10 bg-white p-5"
               >
                 <span className="grid h-11 w-11 shrink-0 place-items-center rounded-md bg-navy text-sm font-bold text-gold">
                   {index + 1}
@@ -140,6 +143,8 @@ export default function HomePage() {
         </div>
       </section>
 
+      <PathwaySelector />
+
       <section className="fine-grid bg-ink px-5 py-16 text-white sm:px-8">
         <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[1fr_1fr] lg:items-center">
           <div>
@@ -147,12 +152,13 @@ export default function HomePage() {
               Differentiation
             </p>
             <h2 className="mt-3 text-3xl font-bold leading-tight sm:text-4xl">
-              Built for minority-owned businesses ready to compete.
+              Built first for African American businesses ready to compete.
             </h2>
             <p className="mt-4 text-base leading-7 text-white/70">
-              Principal Equity Capital emphasizes practical empowerment:
-              helping owners understand the systems, pursue more contracts, and
-              position for stronger qualifications over time.
+              Principal Equity Capital emphasizes practical empowerment for
+              African American small business owners: helping them understand
+              the systems, pursue more contracts, and position for stronger
+              qualifications over time.
             </p>
             <div className="mt-8 grid gap-4 sm:grid-cols-2">
               {values.map((value) => {
@@ -171,7 +177,7 @@ export default function HomePage() {
               })}
             </div>
           </div>
-          <div className="rounded-lg border border-white/10 bg-white p-6 text-ink shadow-soft">
+          <div className="interactive-card rounded-lg border border-white/10 bg-white p-6 text-ink shadow-soft">
             <h3 className="text-xl font-bold">8(a) + GSA Advantage</h3>
             <p className="mt-3 text-sm leading-6 text-steel">
               The firm helps clients think beyond a single pursuit. More
@@ -197,6 +203,8 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      <FaqAccordion />
 
       <CtaBand />
     </>

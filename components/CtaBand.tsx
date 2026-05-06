@@ -7,7 +7,7 @@ type CtaBandProps = {
 
 export function CtaBand({
   title = "Ready to pursue government contracts with a clearer plan?",
-  description = "Book a call to discuss your current position, immediate opportunities, and the path toward stronger contract readiness.",
+  description = "Book a call to discuss your current position, immediate opportunities, and the path toward stronger contract readiness for African American small business owners.",
 }: CtaBandProps) {
   return (
     <section className="bg-navy px-5 py-16 text-white sm:px-8">

@@ -1,6 +1,6 @@
 # Principal Equity Capital Demo Website
 
-A static, frontend-only demo website for Principal Equity Capital, a premium government contracting consultancy focused on helping minority-owned and African American small businesses pursue government contracts.
+A static, frontend-only demo website for Principal Equity Capital, a premium government contracting consultancy focused first on helping African American small businesses pursue government contracts.
 
 ## Stack
 
@@ -24,9 +24,22 @@ C:\Users\Musleh\.cache\codex-runtimes\codex-primary-runtime\dependencies\node\bi
 
 Then open `http://localhost:3000`.
 
+## Public Demo
+
+After GitHub Pages finishes deploying from `main`, the public demo will be available at:
+
+```text
+https://dinxsolutionsinc.github.io/PrincipalEquityDemo/
+```
+
 ## Pages
 
 - `/` - Home
 - `/about` - Company mission and founder background
 - `/book` - Call-to-book page with no forms or data collection
 - `/contact` - Alias for the booking page
+
+## Photo Credits
+
+- Homepage hero: Christina @ wocintechchat.com via Unsplash
+- About page image: Christina @ wocintechchat.com via Unsplash

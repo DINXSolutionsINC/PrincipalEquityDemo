@@ -7,12 +7,12 @@ import { SectionHeader } from "@/components/SectionHeader";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Learn about Principal Equity Capital's mission to help minority-owned and African American small businesses pursue government contracts.",
+    "Learn about Principal Equity Capital's mission to help African American small businesses pursue government contracts.",
 };
 
 const missionPoints = [
-  "Clarify the government contracting process for capable small businesses.",
-  "Support minority-owned and African American firms entering public-sector markets.",
+  "Clarify the government contracting process for capable African American small businesses.",
+  "Prioritize African American firms entering public-sector markets, with support for minority-owned businesses as a secondary audience.",
   "Help owners build a practical path toward proposal readiness, contract acquisition, 8(a), and GSA positioning.",
 ];
 
@@ -26,14 +26,14 @@ export default function AboutPage() {
               About the Firm
             </p>
             <h1 className="mt-4 text-4xl font-bold leading-tight text-ink sm:text-5xl">
-              Expert guidance for small businesses entering government
-              contracting.
+              Expert guidance for African American small businesses entering
+              government contracting.
             </h1>
             <p className="mt-6 text-lg leading-8 text-steel">
-              Principal Equity Capital exists to help business owners translate
-              capability into contract opportunity. The firm supports clients
-              through the processes, proposals, and strategy required to compete
-              with more confidence.
+              Principal Equity Capital exists to help African American business
+              owners translate capability into contract opportunity. The firm
+              supports clients through the processes, proposals, and strategy
+              required to compete with more confidence.
             </p>
             <div className="mt-8">
               <ButtonLink href="/book" icon="phone">
@@ -49,8 +49,8 @@ export default function AboutPage() {
         <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.8fr_1.2fr]">
           <SectionHeader
             eyebrow="Mission"
-            title="Make government contracting more accessible, strategic, and actionable."
-            description="The focus is straightforward: help owners understand what matters, take the right next step, and build toward repeatable contract success."
+            title="Make government contracting more accessible for African American business owners."
+            description="The focus is straightforward: help African American owners understand what matters, take the right next step, and build toward repeatable contract success."
           />
           <div className="grid gap-4">
             {missionPoints.map((point) => (
@@ -75,7 +75,7 @@ export default function AboutPage() {
             <SectionHeader
               eyebrow="Founder Background"
               title="Grounded in direct government contracting experience."
-              description="The founder brings experience from prior work inside the government contracting space and positions Principal Equity Capital as an expert consultancy for owners who need steady advisory support."
+              description="The founder brings experience from prior work inside the government contracting space and positions Principal Equity Capital as an expert consultancy for African American small business owners who need steady advisory support."
             />
           </div>
           <div className="rounded-lg border border-ink/10 bg-white p-6 shadow-soft">
@@ -100,7 +100,7 @@ export default function AboutPage() {
       </section>
 
       <CtaBand
-        title="Speak with Principal Equity Capital about your contract path."
+        title="Speak with Principal Equity Capital about your contracting path."
         description="A short call can clarify where your business stands and what needs to happen next."
       />
     </>

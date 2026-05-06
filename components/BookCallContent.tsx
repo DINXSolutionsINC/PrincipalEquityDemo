@@ -1,6 +1,7 @@
-import { CalendarDays, Clock, MapPin, Phone } from "lucide-react";
+import { Mail, Phone } from "lucide-react";
 import { ButtonLink } from "@/components/ButtonLink";
-import { phoneNumber } from "@/lib/content";
+import { DemoBookingWidget } from "@/components/DemoBookingWidget";
+import { contactEmail, phoneNumber } from "@/lib/content";
 
 const agenda = [
   "Current business capability and contract readiness",
@@ -21,8 +22,9 @@ export function BookCallContent() {
               Call to discuss your government contracting path.
             </h1>
             <p className="mt-6 text-lg leading-8 text-steel">
-              No forms, no data collection. Use the placeholder number below to
-              represent the demo booking experience.
+              Pick a consultation focus and preview an available time. This is
+              a demo booking experience with no form submission and no data
+              collection.
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <a
@@ -36,55 +38,44 @@ export function BookCallContent() {
                 Return Home
               </ButtonLink>
             </div>
-          </div>
-
-          <aside className="bg-mist p-6 shadow-soft">
-            <div className="bg-white p-5">
-              <p className="text-xs font-bold uppercase text-gold">
-                Demo Calendar Preview
-              </p>
-              <h2 className="mt-3 text-2xl font-bold text-ink">
-                Advisory Consultation
-              </h2>
-              <div className="mt-5 grid gap-3 text-sm text-steel">
-                <div className="flex items-center gap-3">
-                  <Clock aria-hidden="true" className="h-5 w-5 text-pine" />
-                  <span>30 minute strategy call</span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <CalendarDays
-                    aria-hidden="true"
-                    className="h-5 w-5 text-pine"
-                  />
-                  <span>Availability shown in live version</span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <MapPin aria-hidden="true" className="h-5 w-5 text-pine" />
-                  <span>Detroit emphasis, nationwide support</span>
-                </div>
+            <div className="mt-8 grid gap-3 text-sm text-steel">
+              <div className="rounded-md border border-ink/10 bg-mist px-4 py-3">
+                Best for African American small business owners exploring SAM,
+                8(a), GSA, proposal readiness, or first contract targets.
+              </div>
+              <div className="rounded-md border border-ink/10 bg-mist px-4 py-3">
+                Live booking would connect to Calendly or a scheduling tool; the
+                demo shows the client flow without collecting information.
               </div>
             </div>
-            <div className="mt-5 grid gap-3">
-              {["Mon", "Tue", "Wed"].map((day, index) => (
-                <div
-                  key={day}
-                  className="flex items-center justify-between rounded-md border border-ink/10 bg-white px-4 py-3"
-                >
-                  <span className="text-sm font-semibold text-ink">{day}</span>
-                  <span className="text-sm text-steel">
-                    {index === 0
-                      ? "10:00 AM"
-                      : index === 1
-                        ? "1:30 PM"
-                        : "3:00 PM"}
-                  </span>
-                </div>
-              ))}
-            </div>
-            <p className="mt-4 text-xs leading-5 text-steel">
-              Non-functional mockup for demo purposes only.
+          </div>
+
+          <DemoBookingWidget />
+        </div>
+      </section>
+
+      <section className="bg-mist px-5 py-14 sm:px-8">
+        <div className="mx-auto flex max-w-7xl flex-col justify-between gap-6 rounded-lg border border-ink/10 bg-white p-6 shadow-soft md:flex-row md:items-center">
+          <div>
+            <p className="text-xs font-bold uppercase text-gold">
+              Prefer Email?
             </p>
-          </aside>
+            <h2 className="mt-3 text-2xl font-bold text-ink">
+              Send a direct message about your contracting goals.
+            </h2>
+            <p className="mt-3 max-w-2xl text-sm leading-6 text-steel">
+              Email is best for quick context, document questions, or asking
+              which consultation focus makes the most sense before booking a
+              call.
+            </p>
+          </div>
+          <a
+            href={`mailto:${contactEmail}`}
+            className="inline-flex min-h-12 shrink-0 items-center justify-center gap-2 rounded-md bg-navy px-5 py-3 text-sm font-semibold text-white transition hover:bg-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold"
+          >
+            <Mail aria-hidden="true" className="h-4 w-4 text-gold" />
+            <span>{contactEmail}</span>
+          </a>
         </div>
       </section>
 

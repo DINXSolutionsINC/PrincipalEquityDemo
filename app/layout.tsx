@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Footer } from "@/components/Footer";
 import { Navbar } from "@/components/Navbar";
+import { TopBar } from "@/components/TopBar";
 
 export const metadata: Metadata = {
   title: {
@@ -9,9 +10,11 @@ export const metadata: Metadata = {
     template: "%s | Principal Equity Capital",
   },
   description:
-    "Premium government contracting consulting for small businesses, minority-owned firms, and African American entrepreneurs pursuing federal contract opportunities.",
+    "Premium government contracting consulting for African American small business owners pursuing federal contract opportunities.",
   keywords: [
     "government contracting",
+    "African American small business government contracts",
+    "African American government contracting consultant",
     "small business government contracts",
     "minority business contracts",
     "African American small business support",
@@ -29,6 +32,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <TopBar />
         <Navbar />
         <main>{children}</main>
         <Footer />
